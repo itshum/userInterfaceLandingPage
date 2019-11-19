@@ -1,0 +1,126 @@
+.home {
+
+    .content-header {
+      border-bottom: 2px dashed gray;
+
+      .text {
+      margin:2% 0%;
+      
+      }
+
+    }
+
+    .content-section {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    } 
+
+    .inverse-content {
+
+      @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+
+
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+
+          @media @phone {
+            width: 80%;
+            order: 1;
+          }
+      }
+
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+
+        @media @phone {
+          width: 80%;
+          order: 2;
+          margin-bottom: 2%;
+        }
+
+
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .inverse-content {
+      padding-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+
+      .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+      }
+
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+      }
+    }
+
+    .content-destination {
+      width: 75%;
+      margin: 0 auto 30px;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    .content-pick {
+      padding-top: 30px;
+      border-top: 2px dashed @navigation-border;
+      display: flex;
+      justify-content: space-between;
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+      }
+
+      .destination {
+        width: 30%;
+        margin-bottom: 30px;
+
+        @media @phone {
+          display: flex;
+          flex-wrap: wrap;
+          width: 95%;
+          
+        
+        }
+
+        .cta {
+          .custom-button(teal, 250px, white);
+          @media @phone {
+            text-align: center;
+            width: 95%;
+            
+          
+          }
+
+        }
+
+      }
+
+  }
+}

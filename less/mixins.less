@@ -1,0 +1,23 @@
+// Mixins in here
+
+
+.custom-button(@bg-color, @size, @font-color){
+    display: block;
+    text-align: center;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-color;
+    
+
+}
+
+.Flex(){
+	display: flex;
+}
+
+@phone: ~'(max-width: 500px)';
