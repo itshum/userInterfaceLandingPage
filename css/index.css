@@ -229,6 +229,7 @@ nav {
   align-items: center;
   background-color: #202020;
   text-decoration: none;
+  width: 100%;
   height: 90px;
 }
 nav .logo {
@@ -239,26 +240,69 @@ nav .links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-right: 10%;
+  width: 30%;
   order: 1;
 }
 nav .links a {
-  font-size: 1.5rem;
-  padding: 0% 10%;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0% 3%;
   font-weight: bold;
 }
 footer {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  background: #E1DACA;
+}
+footer .master-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+footer .footer-links {
+  display: flex;
   flex-direction: row;
   align-items: center;
-  height: 350px;
-  background: #F7F7F8;
+  width: 40%;
+  padding-left: 10%;
 }
 footer .footer-links-1 {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+}
+footer .footer-links-1 a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #4D4D4D;
+  margin: 10% 0%;
 }
 footer .footer-links-2 {
+  display: flex;
   flex-direction: column;
+  padding-left: 20%;
+}
+footer .footer-links-2 a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #4D4D4D;
+  margin: 10% 0%;
+}
+footer .email {
+  width: 30%;
+  padding-right: 10%;
+  align-items: center;
+}
+footer .email h4 {
+  font-size: 1.5rem;
 }
 .main-content-top {
   background-size: cover;
@@ -412,14 +456,22 @@ footer .footer-links-2 {
   margin-top: 5%;
 }
 .about-top {
-  text-align: center;
+  margin: auto 0;
+  width: 100%;
+  align-items: center;
 }
 .about-text {
   max-width: 600px;
+  margin: auto 0;
   position: absolute;
+  text-align: center;
   color: white;
   top: 40%;
   right: 30%;
+}
+.about-text h2 {
+  margin-top: 40%;
+  font-weight: bold;
 }
 .about-team {
   display: flex;
@@ -649,7 +701,4 @@ footer .footer-links-2 {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
-}
-footer {
-  background: white;
 }
