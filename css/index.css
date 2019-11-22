@@ -249,6 +249,11 @@ nav .links a {
   padding: 0% 3%;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  nav .links a {
+    font-size: 1.2rem;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -271,6 +276,14 @@ footer .footer-links {
   align-items: center;
   width: 40%;
   padding-left: 10%;
+}
+@media (max-width: 500px) {
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
 }
 footer .footer-links-1 {
   display: flex;
@@ -318,6 +331,15 @@ header .main-content-top .banner-text {
   right: 10%;
 }
 @media (max-width: 500px) {
+  header .main-content-top .banner-text .banner-text {
+    text-align: right;
+  }
+  header .main-content-top .banner-text h1 {
+    font-size: 2rem;
+  }
+  header .main-content-top .banner-text p {
+    font-size: 1.5rem;
+  }
 }
 header .main-content-top .banner-text .shop-now {
   color: black;
@@ -388,12 +410,39 @@ header .main-content-top .banner-text .shop-now:hover {
   height: 750px;
   margin: 0% 5%;
 }
+@media (max-width: 500px) {
+  .main-content-middle-top {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 10%;
+    margin-bottom: 10%;
+  }
+}
 .main-content-middle-top .middle-top-copy {
   max-width: 500px;
   margin: 10% 0% 5%;
 }
+@media (max-width: 500px) {
+  .main-content-middle-top .middle-top-copy .middle-top-copy {
+    text-align: center;
+  }
+  .main-content-middle-top .middle-top-copy h1 {
+    font-size: 2.2rem;
+  }
+  .main-content-middle-top .middle-top-copy h3 {
+    font-size: 1.8rem;
+  }
+  .main-content-middle-top .middle-top-copy h4 {
+    font-size: 1.5rem;
+  }
+}
 .main-content-middle-top .middle-top-img img {
   max-width: 450px;
+}
+@media (max-width: 500px) {
+  .main-content-middle-top .middle-top-img img {
+    max-width: 350px;
+  }
 }
 .main-content-middle-bottom {
   display: flex;
@@ -403,18 +452,59 @@ header .main-content-top .banner-text .shop-now:hover {
   margin-top: 15%;
   background: #e1daca;
 }
+@media (max-width: 500px) {
+  .main-content-middle-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e1daca;
+    height: 900px;
+  }
+}
 .middle-bottom-copy {
   max-width: 550px;
-  margin: 10% 5%;
+  margin: 5% 5%;
   order: 1;
+}
+@media (max-width: 500px) {
+  .middle-bottom-copy .middle-bottom-copy {
+    display: flex;
+    text-align: center;
+    margin: 0% 5%;
+    order: 1;
+  }
+  .middle-bottom-copy h2 {
+    font-size: 2.2rem;
+  }
+  .middle-bottom-copy h4 {
+    font-size: 1.5rem;
+    line-height: 190%;
+  }
 }
 .middle-bottom-img img {
   max-width: 450px;
   margin: 0% 5%;
   order: 2;
 }
+@media (max-width: 500px) {
+  .middle-bottom-img img {
+    max-width: 350px;
+    margin: 10% 0%;
+    order: 2;
+  }
+}
 .how-it-works {
   height: 650px;
+}
+@media (max-width: 500px) {
+  .how-it-works {
+    height: 100%;
+  }
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 10%;
+  }
 }
 .how-it-works .how-it-works-points {
   display: flex;
@@ -422,6 +512,13 @@ header .main-content-top .banner-text .shop-now:hover {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .how-it-works .how-it-works-points {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
 }
 .how-it-works .how-it-works-points .step-1 {
   text-align: center;
@@ -456,6 +553,14 @@ header .main-content-top .banner-text .shop-now:hover {
   text-align: center;
   color: white;
 }
+@media (max-width: 500px) {
+  .get-started {
+    height: 500px;
+  }
+  .get-started h1 {
+    font-size: 2.5rem;
+  }
+}
 .get-started h1 {
   text-transform: uppercase;
 }
@@ -475,6 +580,24 @@ header .main-content-top .banner-text .shop-now:hover {
   margin-top: 5%;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .get-started .order-today {
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    background: #3d6600;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 5%;
+    cursor: pointer;
+  }
+}
 .get-started .order-today:hover {
   color: #3d6600;
   font-size: 2rem;
@@ -489,6 +612,24 @@ header .main-content-top .banner-text .shop-now:hover {
   box-sizing: border-box;
   border-radius: 5px;
   margin-top: 5%;
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .get-started .order-today:hover {
+    color: #3d6600;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 200px;
+    height: 80px;
+    background: white;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 5%;
+    cursor: pointer;
+  }
 }
 .about-top {
   margin: auto 0;
